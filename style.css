@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.restaurant-name{
+  width: 98vw;
+  text-align: center;
+  border-bottom: 3px solid black;
+  padding: 10px;
+  font-size: 36px;
+  color: brown;
+}
+
+.menu-title{
+  text-align: center;
+  color: orange;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.menu-section{
+  background-color: rgb(212, 212, 212);
+  width: 98vw;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.food-section{
+  flex-basis: 41%;
+  padding: 25px;
+}
+
+.food-section > h2{
+  text-align: center;
+  color: darkslategrey;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.item{
+  margin-bottom: 30px;
+}
+
+.name-and-price{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  font-size: 20px;
+}
+
+.description{
+  font-style: italic;
+}
+
+@media(max-width: 700px){
+  .food-section{
+    flex-basis: 100%;
+  }
+}
